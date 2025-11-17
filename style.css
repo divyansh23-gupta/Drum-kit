@@ -1,6 +1,4 @@
-/* -----------------------
-   GLOBAL STYLING
------------------------- */
+
 body {
   text-align: center;
   background: linear-gradient(125deg, #0a0f29, #1a1f4a, #ff005c33);
@@ -10,9 +8,6 @@ body {
 
 
 
-/* -----------------------
-   MAIN TITLE
------------------------- */
 h1 {
   font-size: 5rem;
   color: #ffffff;
@@ -35,9 +30,7 @@ h1 {
   }
 }
 
-/* -----------------------
-   BUTTON CONTAINER
------------------------- */
+
 .set {
   margin-top: 80px;
   display: flex;
@@ -46,9 +39,6 @@ h1 {
   gap: 25px;
 }
 
-/* -----------------------
-   DRUM BUTTONS
------------------------- */
 .drum {
   height: 160px;
   width: 160px;
@@ -86,9 +76,7 @@ h1 {
   box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6) inset;
 }
 
-/* -----------------------
-   INDIVIDUAL DRUM IMAGES
------------------------- */
+
 .w { background-image: url("images/tom1.png"); }
 .a { background-image: url("images/tom2.png"); }
 .s { background-image: url("images/tom3.png"); }
@@ -97,9 +85,7 @@ h1 {
 .k { background-image: url("images/crash.png"); }
 .l { background-image: url("images/kick.png"); }
 
-/* -----------------------
-   FOOTER
------------------------- */
+
 footer {
   margin-top: 80px;
   color: #d7e8f0;
@@ -107,9 +93,7 @@ footer {
   opacity: 0.8;
   letter-spacing: 2px;
 }
-/* -----------------------
-   SUBTITLE
------------------------- */
+
 .subtitle {
   color: #ffffff;
   font-size: 1.8rem;
@@ -118,9 +102,6 @@ footer {
   letter-spacing: 2px;
 }
 
-/* -----------------------
-   DESCRIPTION
------------------------- */
 .description {
   color: #d9e6ff;
   font-size: 1.2rem;
@@ -130,9 +111,7 @@ footer {
   opacity: 0.85;
 }
 
-/* -----------------------
-   GLOW DIVIDER LINE
------------------------- */
+
 .glow-divider {
   width: 200px;
   height: 4px;
@@ -142,9 +121,6 @@ footer {
   box-shadow: 0 0 20px #ff0080, 0 0 20px #00d0ff;
 }
 
-/* -----------------------
-   TIPS BOX
------------------------- */
 .tips-box {
   margin: 50px auto;
   width: 60%;
@@ -175,9 +151,7 @@ footer {
   line-height: 1.6;
 }
 
-/* -----------------------
-   FOOTER REDESIGN
------------------------- */
+
 footer {
   margin-top: 80px;
   padding: 20px;
