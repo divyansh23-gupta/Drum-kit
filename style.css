@@ -1,0 +1,188 @@
+/* -----------------------
+   GLOBAL STYLING
+------------------------ */
+body {
+  text-align: center;
+  background: linear-gradient(125deg, #0a0f29, #1a1f4a, #ff005c33);
+  font-family: "Arvo", serif;
+  overflow-x: hidden;
+}
+
+
+
+/* -----------------------
+   MAIN TITLE
+------------------------ */
+h1 {
+  font-size: 5rem;
+  color: #ffffff;
+  margin-top: 60px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  text-shadow: 0px 0px 25px rgba(255, 50, 100, 0.9),
+               0px 0px 8px rgba(255, 255, 255, 0.6);
+  animation: glow 2.5s infinite alternate ease-in-out;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 10px rgba(255, 50, 100, 0.5),
+                 0px 0px 5px rgba(255, 255, 255, 0.3);
+  }
+  to {
+    text-shadow: 0px 0px 25px rgba(255, 50, 100, 1),
+                 0px 0px 12px rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* -----------------------
+   BUTTON CONTAINER
+------------------------ */
+.set {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* -----------------------
+   DRUM BUTTONS
+------------------------ */
+.drum {
+  height: 160px;
+  width: 160px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-size: 4rem;
+  color: #ff0066;
+  font-weight: 900;
+  text-shadow: 3px 0 #ffffff;
+
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.5),
+              inset 0px 0px 10px rgba(255,255,255,0.3);
+
+  transition: transform 0.15s ease, box-shadow 0.2s ease,
+              filter 0.2s ease;
+}
+
+/* Hover effect */
+.drum:hover {
+  transform: translateY(-8px) scale(1.06);
+  box-shadow: 0px 0px 40px rgba(255, 0, 80, 0.6),
+              inset 0px 0px 15px rgba(255,255,255,0.4);
+  filter: brightness(1.15);
+}
+
+/* Pressed animation */
+.pressed {
+  transform: scale(0.95);
+  filter: brightness(0.6);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6) inset;
+}
+
+/* -----------------------
+   INDIVIDUAL DRUM IMAGES
+------------------------ */
+.w { background-image: url("images/tom1.png"); }
+.a { background-image: url("images/tom2.png"); }
+.s { background-image: url("images/tom3.png"); }
+.d { background-image: url("images/tom4.png"); }
+.j { background-image: url("images/snare.png"); }
+.k { background-image: url("images/crash.png"); }
+.l { background-image: url("images/kick.png"); }
+
+/* -----------------------
+   FOOTER
+------------------------ */
+footer {
+  margin-top: 80px;
+  color: #d7e8f0;
+  font-size: 1.4rem;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+/* -----------------------
+   SUBTITLE
+------------------------ */
+.subtitle {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-top: -20px;
+  opacity: 0.9;
+  letter-spacing: 2px;
+}
+
+/* -----------------------
+   DESCRIPTION
+------------------------ */
+.description {
+  color: #d9e6ff;
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 20px auto;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* -----------------------
+   GLOW DIVIDER LINE
+------------------------ */
+.glow-divider {
+  width: 200px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff0080, #00d0ff);
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ff0080, 0 0 20px #00d0ff;
+}
+
+/* -----------------------
+   TIPS BOX
+------------------------ */
+.tips-box {
+  margin: 50px auto;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 25px rgba(255, 0, 100, 0.3);
+}
+
+.tips-box h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #ff44aa;
+}
+
+.tips-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tips-box li {
+  font-size: 1.1rem;
+  color: #e0eaff;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* -----------------------
+   FOOTER REDESIGN
+------------------------ */
+footer {
+  margin-top: 80px;
+  padding: 20px;
+  color: #d7e8f0;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
